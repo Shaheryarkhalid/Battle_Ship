@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --Primary-Blue:#3f51b5;
+    --Secondary-Blue:#c5cae9;
+    --Error-Red:#c34a4a;
+    --Correct-Position:#00cae4;
+}
+section.Main-Section{
+    height: 100vh;
+    width: 100%;
+    background-image: url('./Ship_Image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Main-Section .Content-Wrapper{
+    position: relative;
+    height:600px;
+    width: 500px;
+    background-color: #e4e6f1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Main-Section .Content-Wrapper-2{
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+}
+.Main-Section .Content-Wrapper .Game-Board{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: #ddd;   
+    border-radius:5px; 
+    border: 10px solid var(--Primary-Blue);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap:2px;
+    box-shadow: 0 0 20px #aaa;
+}
+.Main-Section .Content-Wrapper .Game-Board-2{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: #ddd;   
+    border-radius:5px; 
+    border: 10px solid var(--Primary-Blue);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap:2px;
+    box-shadow: 0 0 20px #aaa;
+}
+.Main-Section .Content-Wrapper .Game-Board span{
+    background-color: var(--Secondary-Blue);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
+}
+.Main-Section .Content-Wrapper .Start-Game{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color:#fff;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    place-items:center;
+    justify-content: center;
+    color:#000;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.Main-Section .Content-Wrapper .Start-Game p{
+    padding:20px 40px;
+}
+.Main-Section .Content-Wrapper .Start-Game button{
+    padding: 20px 25px;
+    background-color: #3f51b5;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    box-shadow:0 0 20px #aaa;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.Main-Section .Content-Wrapper .Start-Game button:hover{
+}
+.ovelay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    cursor: not-allowed;
+}
+.Winner{
+    height: 90vh;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.Button{
+    padding: 20px 25px;
+    background-color: #3f51b5;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    box-shadow:0 0 20px #aaa;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.ovelay_User{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    z-index: -1;
+    cursor: not-allowed;
+}

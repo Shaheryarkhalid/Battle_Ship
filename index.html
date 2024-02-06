@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Ship.svg">
+    <title>Battle Ship</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section class="Main-Section">
+        <div id="Content_Wrapper_2" class="Content-Wrapper  Content-Wrapper-2">
+            <h1>Computers Play</h1>
+            <div class="Game-Board Game-Board-2" id="Game_Board_2">
+             
+                
+            </div>
+            <div class="ovelay">
+
+            </div>
+        </div>    
+        <div id="Content_Wrapper" class="Content-Wrapper">           
+            <h1>Your Play</h1>
+            <div class="Game-Board" id="Game_Board">
+                <div class="Start-Game" id="Start_Game">
+                    <p>You have Successfully deployed your ships.</p>
+                    <button onclick="Game_Start()">Start Game</button>
+                </div>
+            </div>
+            <div class="ovelay_User" id="ovelay_User">
+
+            </div>
+            <div class="Actions">
+                <button class="Button"  onclick="window.location.reload()">Reset</button>
+            </div>
+        </div>
+    </section>
+    <section class="Winner" id="Winner">
+        <h1 id="Announce_Winner"></h1>
+        <button class="Button" onclick="window.location.reload()">Restart</button>
+    </section>
+    <script src="./index.js">
+    </script>
+</body>
+</html>
